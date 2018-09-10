@@ -7,6 +7,8 @@
 //
 
 #import "RAFViewController.h"
+#import <ReactiveAFNetworking/ReactiveAFNetworking.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 @interface RAFViewController ()
 
@@ -17,7 +19,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
+    RACSignal *signal = [sessionManager rac_GET:@"https://api.reddit.com/r/cat/hot" parameters:nil];
+    RACSignal *mappedSignal = [signal map:^id (RACTuple *tuple) {
+        NSLog(@"on map: %@", tuple.second);
+        return tuple;
+    }];
+    [mappedSignal subscribeNext:^(RACTuple *tuple) {
+        NSLog(@"on subscribe: %@", tuple.first);
+    } error:^(NSError * _Nullable error) {
+        NSLog(@"on error: %@", error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning
