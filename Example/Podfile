@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ReactiveAFNetworking_Example' do
+  pod 'ReactiveAFNetworking', :path => '../'
+
+  target 'ReactiveAFNetworking_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
