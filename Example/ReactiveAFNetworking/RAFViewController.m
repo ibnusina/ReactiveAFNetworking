@@ -21,12 +21,12 @@
     [super viewDidLoad];
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     RACSignal *signal = [sessionManager rac_GET:@"https://api.reddit.com/r/cat/hot" parameters:nil];
-    RACSignal *mappedSignal = [signal map:^id _Nullable(id  _Nullable value) {
-        NSLog(@"on map: %@", value);
-        return value;
+    RACSignal *mappedSignal = [signal map:^id (RACTuple *tuple) {
+        NSLog(@"on map: %@", tuple.second);
+        return tuple;
     }];
-    [mappedSignal subscribeNext:^(id  _Nullable x) {
-        NSLog(@"on subscribe: %@", x);
+    [mappedSignal subscribeNext:^(RACTuple *tuple) {
+        NSLog(@"on subscribe: %@", tuple.first);
     } error:^(NSError * _Nullable error) {
         NSLog(@"on error: %@", error);
     }];
