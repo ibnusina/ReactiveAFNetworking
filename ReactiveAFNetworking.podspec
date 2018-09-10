@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ReactiveAFNetworking'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ReactiveAFNetworking.'
+  s.summary          = 'Wrapping AFNetworking with ReactiveObjC'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Using AFNetworking 3 and update ReactiveObjc, hopefully will become replacement for popular AFNetworking+RACExtension
                        DESC
 
   s.homepage         = 'https://github.com/ibnu.sina009@gmail.com/ReactiveAFNetworking'
@@ -38,5 +38,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~> 3.2.1'
+  s.dependency 'ReactiveObjC', '~> 3.1.0'
 end
