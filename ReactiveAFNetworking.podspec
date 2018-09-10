@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReactiveAFNetworking'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Wrapping AFNetworking with ReactiveObjC'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 Using AFNetworking 3 and update ReactiveObjc, hopefully will become replacement for popular AFNetworking+RACExtension
                        DESC
 
-  s.homepage         = 'https://github.com/ibnu.sina009@gmail.com/ReactiveAFNetworking'
+  s.homepage         = 'https://github.com/ibnusina/ReactiveAFNetworking'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ibnu.sina009@gmail.com' => 'ibnu.sina009@gmail.com' }
@@ -36,8 +36,7 @@ Using AFNetworking 3 and update ReactiveObjc, hopefully will become replacement 
   #   'ReactiveAFNetworking' => ['ReactiveAFNetworking/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.public_header_files = 'ReactiveAFNetworking/Classes/*.h'
   s.dependency 'AFNetworking', '~> 3.2.1'
   s.dependency 'ReactiveObjC', '~> 3.1.0'
 end
