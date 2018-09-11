@@ -1,6 +1,9 @@
 use_frameworks!
 
 target 'ReactiveAFNetworking_Example' do
+  pod 'ReactiveObjC', '1.0.2'
+  pod 'AFNetworking', '3.2.1'
+
   pod 'ReactiveAFNetworking', :path => '../'
 
   target 'ReactiveAFNetworking_Tests' do
