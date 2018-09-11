@@ -24,8 +24,8 @@ Using AFNetworking 3 and update ReactiveObjc, hopefully will become replacement 
   s.homepage         = 'https://github.com/ibnusina/ReactiveAFNetworking'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ibnu.sina009@gmail.com' => 'ibnu.sina009@gmail.com' }
-  s.source           = { :git => 'https://github.com/ibnu.sina009@gmail.com/ReactiveAFNetworking.git', :tag => s.version.to_s }
+  s.author           = { 'Ibnu Sina' => 'ibnu.sina009@gmail.com' }
+  s.source           = { :git => 'https://github.com/ibnusina/ReactiveAFNetworking.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
