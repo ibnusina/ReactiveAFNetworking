@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReactiveAFNetworking'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Wrapping AFNetworking with ReactiveObjC'
 
 # This description is used to generate tags and improve search results.
@@ -37,6 +37,6 @@ Using AFNetworking 3 and update ReactiveObjc, hopefully will become replacement 
   # }
 
   s.public_header_files = 'ReactiveAFNetworking/Classes/*.h'
-  s.dependency 'AFNetworking', '~> 3.2.1'
-  s.dependency 'ReactiveObjC', '~> 3.1.0'
+  s.dependency 'AFNetworking', '~> 3'
+  s.dependency 'ReactiveObjC', '>= 1'
 end
