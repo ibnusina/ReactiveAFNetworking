@@ -8,7 +8,7 @@
 
 #import "RAFViewController.h"
 #import <ReactiveAFNetworking/ReactiveAFNetworking.h>
-#import <ReactiveObjC/ReactiveObjC.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface RAFViewController ()
 

@@ -6,7 +6,7 @@
 //
 
 #import "AFHTTPSessionManager+ReactiveObjC.h"
-#import <ReactiveObjC/ReactiveObjC.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 NSString *const RATaskKey = @"NSURLSessionDataTask";
 
