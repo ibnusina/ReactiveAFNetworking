@@ -38,5 +38,5 @@ Using AFNetworking 3 and update ReactiveObjc, hopefully will become replacement 
 
   s.public_header_files = 'ReactiveAFNetworking/Classes/*.h'
   s.dependency 'AFNetworking', '~> 3'
-  s.dependency 'ReactiveObjC', '>= 1'
+  s.dependency 'ReactiveCocoa', '2.4.7'
 end
