@@ -23,6 +23,12 @@ it, simply add the following line to your Podfile:
 pod 'ReactiveAFNetworking'
 ```
 
+If you want to use this library in swift project, it will be easier to use ReactiveCocoa 2.4.7 instead of ReactiveObjC. To support that requirement you can add the following line instead to your Podfile:
+
+```ruby 
+pod 'ReactiveAFNetworking', :git => 'https://github.com/ibnusina/ReactiveAFNetworking', :branch => 'swift-extensibility'
+```
+
 ## Usage
 
 Request signals work in much the same way you would expect them to. Any request that is subscribed to is automatically enqueued and the results, be they errors or JSON, are sent back to you the subscriber. For example
