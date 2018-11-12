@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - ReactiveAFNetworking (1.0.1):
+  - ReactiveAFNetworking (1.0.2):
     - AFNetworking (~> 3)
     - ReactiveCocoa (= 2.4.7)
   - ReactiveCocoa (2.4.7):
@@ -40,7 +40,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  ReactiveAFNetworking: e927656b0845345c0ab3ed6736d9866becddfdd8
+  ReactiveAFNetworking: ce9c24c6fcf98e71193cdcf594adf6113b3c797c
   ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
 
 PODFILE CHECKSUM: 6ee511c16ad9e33b72be3e1278c9965da26b2c19

@@ -62,7 +62,7 @@ NSString *const RATaskKey = @"NSURLSessionDataTask";
 {
     __weak __typeof(self) weakSelf = self;
     return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-        NSURLSessionDataTask *task = [self GET:path parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSURLSessionDataTask *task = [self DELETE:path parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             [weakSelf sendSuccessTask:task response:responseObject subscriber:subscriber];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             [weakSelf sendErrorTask:task error:error subscriber:subscriber];
