@@ -1,43 +1,44 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (4.0.0):
+    - AFNetworking/NSURLSession (= 4.0.0)
+    - AFNetworking/Reachability (= 4.0.0)
+    - AFNetworking/Security (= 4.0.0)
+    - AFNetworking/Serialization (= 4.0.0)
+    - AFNetworking/UIKit (= 4.0.0)
+  - AFNetworking/NSURLSession (4.0.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (4.0.0)
+  - AFNetworking/Security (4.0.0)
+  - AFNetworking/Serialization (4.0.0)
+  - AFNetworking/UIKit (4.0.0):
     - AFNetworking/NSURLSession
-  - ReactiveAFNetworking (1.0.1):
-    - AFNetworking (~> 3)
+  - ReactiveAFNetworking (1.0.3):
+    - AFNetworking (~> 4)
     - ReactiveObjC (>= 1)
   - ReactiveObjC (1.0.2)
 
 DEPENDENCIES:
-  - AFNetworking (= 3.2.1)
+  - AFNetworking (= 4)
   - ReactiveAFNetworking (from `../`)
   - ReactiveObjC (= 1.0.2)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - AFNetworking
+  https://github.com/CocoaPods/Specs.git:
     - ReactiveObjC
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   ReactiveAFNetworking:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  ReactiveAFNetworking: 9eb763c7c9ac853f0e95986b09437d1ae4d4dd63
+  AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
+  ReactiveAFNetworking: 24cccc2b844185972389d58c8f5234896b962fc8
   ReactiveObjC: 58e8dd8d5ccea31d11106c46a4755d9ce9c51aac
 
-PODFILE CHECKSUM: 9c77d58a6961de883ac38aa3c2fbd89cd4dd65c5
+PODFILE CHECKSUM: fa3dc9a37a3045b4e971534e58704254511a1041
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.1

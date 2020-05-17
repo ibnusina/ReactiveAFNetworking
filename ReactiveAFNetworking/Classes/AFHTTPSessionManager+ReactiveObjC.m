@@ -14,9 +14,14 @@ NSString *const RATaskKey = @"NSURLSessionDataTask";
 
 - (RACSignal *)rac_GET:(NSString *)path parameters:(NSDictionary *)parameters
 {
+    return [self rac_GET:path parameters:parameters headers:nil];
+}
+
+- (RACSignal *)rac_GET:(NSString *)path parameters:(NSDictionary *)parameters headers:(NSDictionary *)headers
+{
     __weak __typeof(self) weakSelf = self;
     return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-        NSURLSessionDataTask *task = [self GET:path parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSURLSessionDataTask *task = [self GET:path parameters:parameters headers:headers progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             [weakSelf sendSuccessTask:task response:responseObject subscriber:subscriber];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             [weakSelf sendErrorTask:task error:error subscriber:subscriber];
@@ -29,9 +34,14 @@ NSString *const RATaskKey = @"NSURLSessionDataTask";
 
 - (RACSignal *)rac_POST:(NSString *)path parameters:(NSDictionary *)parameters
 {
+    return [self rac_POST:path parameters:parameters headers:nil];
+}
+
+- (RACSignal *)rac_POST:(NSString *)path parameters:(NSDictionary *)parameters headers:(NSDictionary *)headers
+{
     __weak __typeof(self) weakSelf = self;
     return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-        NSURLSessionDataTask *task = [self POST:path parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSURLSessionDataTask *task = [self POST:path parameters:parameters headers:headers progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             [weakSelf sendSuccessTask:task response:responseObject subscriber:subscriber];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             [weakSelf sendErrorTask:task error:error subscriber:subscriber];
@@ -45,9 +55,14 @@ NSString *const RATaskKey = @"NSURLSessionDataTask";
 
 - (RACSignal *)rac_PUT:(NSString *)path parameters:(NSDictionary *)parameters
 {
+    return [self rac_PUT:path parameters:parameters headers:nil];
+}
+
+- (RACSignal *)rac_PUT:(NSString *)path parameters:(NSDictionary *)parameters headers:(NSDictionary *)headers
+{
     __weak __typeof(self) weakSelf = self;
     return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-        NSURLSessionDataTask *task = [self PUT:path parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSURLSessionDataTask *task = [self PUT:path parameters:parameters headers:headers success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             [weakSelf sendSuccessTask:task response:responseObject subscriber:subscriber];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             [weakSelf sendErrorTask:task error:error subscriber:subscriber];
@@ -60,9 +75,14 @@ NSString *const RATaskKey = @"NSURLSessionDataTask";
 
 - (RACSignal *)rac_DELETE:(NSString *)path parameters:(NSDictionary *)parameters
 {
+    return [self rac_DELETE:path parameters:parameters headers:nil];
+}
+
+- (RACSignal *)rac_DELETE:(NSString *)path parameters:(NSDictionary *)parameters headers:(NSDictionary *)headers
+{
     __weak __typeof(self) weakSelf = self;
     return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-        NSURLSessionDataTask *task = [self DELETE:path parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSURLSessionDataTask *task = [self DELETE:path parameters:parameters headers:headers success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             [weakSelf sendSuccessTask:task response:responseObject subscriber:subscriber];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             [weakSelf sendErrorTask:task error:error subscriber:subscriber];
@@ -75,9 +95,14 @@ NSString *const RATaskKey = @"NSURLSessionDataTask";
 
 - (RACSignal *)rac_PATCH:(NSString *)path parameters:(NSDictionary *)parameters
 {
+    return [self rac_PATCH:path parameters:parameters headers:nil];
+}
+
+- (RACSignal *)rac_PATCH:(NSString *)path parameters:(NSDictionary *)parameters headers:(NSDictionary *)headers
+{
     __weak __typeof(self) weakSelf = self;
     return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-        NSURLSessionDataTask *task = [self PATCH:path parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSURLSessionDataTask *task = [self PATCH:path parameters:parameters headers:headers success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             [weakSelf sendSuccessTask:task response:responseObject subscriber:subscriber];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             [weakSelf sendErrorTask:task error:error subscriber:subscriber];

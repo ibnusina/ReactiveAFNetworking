@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
-    RACSignal *signal = [sessionManager rac_GET:@"https://api.reddit.com/r/cat/hot" parameters:nil];
+    RACSignal *signal = [sessionManager rac_GET:@"https://jsonplaceholder.typicode.com/todos/1" parameters:nil];
     RACSignal *mappedSignal = [signal map:^id (RACTuple *tuple) {
         NSLog(@"on map: %@", tuple.second);
         return tuple;
