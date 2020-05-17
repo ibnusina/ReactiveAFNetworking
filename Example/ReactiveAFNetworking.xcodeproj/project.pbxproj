@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2FFE847D144B64A38E023A0B /* Pods_ReactiveAFNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveAFNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DDB5CB682179BC444C75783 /* ReactiveAFNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ReactiveAFNetworking.podspec; path = ../ReactiveAFNetworking.podspec; sourceTree = "<group>"; };
+		3DDB5CB682179BC444C75783 /* ReactiveAFNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ReactiveAFNetworking.podspec; path = ../ReactiveAFNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4ABD896A2BA24689560CC3C9 /* Pods-ReactiveAFNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveAFNetworking_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveAFNetworking_Example/Pods-ReactiveAFNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4B290F103E551609C6B746C7 /* Pods-ReactiveAFNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveAFNetworking_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveAFNetworking_Tests/Pods-ReactiveAFNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ReactiveAFNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveAFNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,10 +63,10 @@
 		6CA00FB8921228E5B89452F4 /* Pods-ReactiveAFNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveAFNetworking_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveAFNetworking_Tests/Pods-ReactiveAFNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		880AE37118339A4CC26AC39E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		880AE37118339A4CC26AC39E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8AE69B1EFA517047C7D6A60C /* Pods_ReactiveAFNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveAFNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B081E78355B64BE4A9F0E157 /* Pods-ReactiveAFNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveAFNetworking_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveAFNetworking_Example/Pods-ReactiveAFNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CFC4A9F202AAF5670064DFD6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CFC4A9F202AAF5670064DFD6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -336,7 +337,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveAFNetworking_Example/Pods-ReactiveAFNetworking_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ReactiveAFNetworking_Example/Pods-ReactiveAFNetworking_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveAFNetworking/ReactiveAFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
@@ -349,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveAFNetworking_Example/Pods-ReactiveAFNetworking_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactiveAFNetworking_Example/Pods-ReactiveAFNetworking_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -492,6 +493,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReactiveAFNetworking/ReactiveAFNetworking-Prefix.pch";
 				INFOPLIST_FILE = "ReactiveAFNetworking/ReactiveAFNetworking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +509,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReactiveAFNetworking/ReactiveAFNetworking-Prefix.pch";
 				INFOPLIST_FILE = "ReactiveAFNetworking/ReactiveAFNetworking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

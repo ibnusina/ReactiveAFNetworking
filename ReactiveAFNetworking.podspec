@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReactiveAFNetworking'
-  s.version          = '1.0.2'
+  s.version          = '1.1.0'
   s.summary          = 'Wrapping AFNetworking with ReactiveObjC'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Using AFNetworking 3 and update ReactiveObjc, hopefully will become replacement for popular AFNetworking+RACExtension
+Using AFNetworking 4 and update ReactiveObjc, hopefully will become replacement for popular AFNetworking+RACExtension
                        DESC
 
   s.homepage         = 'https://github.com/ibnusina/ReactiveAFNetworking'
@@ -28,7 +28,7 @@ Using AFNetworking 3 and update ReactiveObjc, hopefully will become replacement 
   s.source           = { :git => 'https://github.com/ibnusina/ReactiveAFNetworking.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'ReactiveAFNetworking/Classes/**/*'
   
@@ -37,6 +37,6 @@ Using AFNetworking 3 and update ReactiveObjc, hopefully will become replacement 
   # }
 
   s.public_header_files = 'ReactiveAFNetworking/Classes/*.h'
-  s.dependency 'AFNetworking', '~> 3'
+  s.dependency 'AFNetworking', '~> 4'
   s.dependency 'ReactiveCocoa', '2.4.7'
 end

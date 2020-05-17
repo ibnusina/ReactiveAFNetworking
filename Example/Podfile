@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'ReactiveAFNetworking_Example' do
-  pod 'AFNetworking', '3.2.1'
+  pod 'AFNetworking', '4'
 
   pod 'ReactiveAFNetworking', :path => '../'
 
